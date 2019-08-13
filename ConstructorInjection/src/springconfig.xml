@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="m1" class="edu.jspiders.constructorinjection.beans.Mobile">
+	
+		<!-- <constructor-arg name="serialNumb" value="NDSMDS1242" />
+		<constructor-arg name="brand" value="Nokia" />
+		<constructor-arg name="name" value="3301" />
+		<constructor-arg name="price" value="1500" /> -->
+		
+		<constructor-arg index="0" value="NDSMDS1242" />
+		<constructor-arg index="1" value="Nokia" />
+		<constructor-arg index="2" value="3301" />
+		<constructor-arg index="3" value="1500" />
+	
+	</bean>
+	
+	<bean id="m2" class="edu.jspiders.constructorinjection.beans.Mobile">
+		
+		<constructor-arg index="0" value="NDSMDS1242" />
+		<constructor-arg index="2" value="Nokia" />
+		<constructor-arg index="3" value="3301" />
+		<constructor-arg index="1" value="1500" />
+	
+	</bean>
+	
+	<bean id="m3" class="edu.jspiders.constructorinjection.beans.Mobile">
+		
+		<constructor-arg index="1" value="NDSMDS1242" />
+		<constructor-arg index="2" value="Nokia" />
+		<constructor-arg index="3" value="3301" />
+		<constructor-arg index="0" value="1500" />
+	
+	</bean>
+	
+</beans>
